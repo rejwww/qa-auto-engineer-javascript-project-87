@@ -1,0 +1,33 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/rejwww/qa-auto-engineer-javascript-project-87/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/rejwww/qa-auto-engineer-javascript-project-87/actions)",
+  "homepage": "https://github.com/rejwww/qa-auto-engineer-javascript-project-87#readme",
+  "bugs": {
+    "url": "https://github.com/rejwww/qa-auto-engineer-javascript-project-87/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rejwww/qa-auto-engineer-javascript-project-87.git"
+  },
+  "license": "ISC",
+  "author": "",
+   "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "commander": "^15.0.0"
+  },
+  "devDependencies": {
+    "prettier": "3.8.4"
+  },
+  "bin": {
+     "gendiff": "gendiff.js"
+  }
+}
