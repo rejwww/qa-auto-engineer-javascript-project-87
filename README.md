@@ -10,3 +10,10 @@
 Команда **make publish** - публикации пакета в npm для доступа установки другими участниками проекта.
 
 Команда **make lint** - запуск Eslint и Prettier (проверка кода на соответствие стандартам).
+
+
+
+## Пример работы gendiff
+
+gendiff filepath1.json filepath2.json
+https://asciinema.org/a/zpSmfK07gA37LCfp
