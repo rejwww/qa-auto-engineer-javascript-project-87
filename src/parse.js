@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import _ from 'lodash';
 
 function parse(parserFile1 , parserFile2) {
