@@ -6,6 +6,10 @@
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=rejwww_qa-auto-engineer-javascript-project-87&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=rejwww_qa-auto-engineer-javascript-project-87)
 
 
+### Github Actions 
+[![hexlet-check](https://github.com/rejwww/qa-auto-engineer-javascript-project-87/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/rejwww/qa-auto-engineer-javascript-project-87/actions/workflows/hexlet-check.yml)
+
+
 
 ## Makefile - команды
 
