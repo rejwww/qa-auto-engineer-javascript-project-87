@@ -36,5 +36,8 @@
   },
   "bin": {
     "gendiff": "gendiff.js"
-  }
+  },
+  "jest": {
+  "transform": {}
+}
 }
