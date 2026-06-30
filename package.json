@@ -21,7 +21,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules npx jest --coverage",
+    "sonar": "node ./node_modules/sonarqube-scanner/bin/sonar-scanner"
   },
   "dependencies": {
     "commander": "^15.0.0",
@@ -32,12 +33,15 @@
     "eslint": "^10.6.0",
     "globals": "^17.7.0",
     "jest": "^30.4.2",
-    "prettier": "3.8.4"
+    "prettier": "3.8.4",
+    "sonarqube-scanner": "^4.3.8",
+    "commander": "^15.0.0",
+    "lodash": "^4.18.1"
   },
   "bin": {
     "gendiff": "gendiff.js"
   },
   "jest": {
-  "transform": {}
-}
+    "transform": {}
+  }
 }
