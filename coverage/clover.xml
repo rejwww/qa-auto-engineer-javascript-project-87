@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1782829026112" clover="3.2.0">
-  <project timestamp="1782829026112" name="All files">
+<coverage generated="1782834207338" clover="3.2.0">
+  <project timestamp="1782834207338" name="All files">
     <metrics statements="24" coveredstatements="24" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3" elements="33" coveredelements="33" complexity="0" loc="24" ncloc="24" packages="1" files="3" classes="3"/>
     <file name="index.js" path="/Users/aatapalov/Desktop/hexlet/qa-auto-engineer-javascript-project-87/src/index.js">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
