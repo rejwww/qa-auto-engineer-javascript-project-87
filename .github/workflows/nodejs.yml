@@ -88,3 +88,58 @@ jobs:
           extraProperties: |
             sonar.javascript.lcov.reportPaths=coverage/lcov.info
             sonar.sourceEncoding=UTF-8
+
+
+
+
+# name: Node CI
+
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
+
+# env:
+#   CI: true
+#   NODE_OPTIONS: --experimental-vm-modules
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     strategy:
+#       matrix:
+#         node-version: [ "24.x" ]
+
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v6
+
+#       - name: Setup Node.js ${{ matrix.node-version }}
+#         uses: actions/setup-node@v6
+#         with:
+#           node-version: ${{ matrix.node-version }}
+#           cache: "npm"
+
+#       - name: Install dependencies
+#         run: npm ci
+
+#       # Важно: запускаем именно ту команду, которая реально пишет coverage/lcov.info
+#       - name: Run tests with coverage
+#         run: make test-coverage
+
+#       - name: Verify coverage file exists
+#         run: ls -l coverage/lcov.info
+
+#       - name: SonarQube Scan
+#         uses: SonarSource/sonarqube-scan-action@v7
+#         env:
+#           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+#           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+#         with:
+#           projectBaseDir: .
+#           extraProperties: |
+#             sonar.javascript.lcov.reportPaths=coverage/lcov.info
+#             sonar.sourceEncoding=UTF-8
+#             sonar.sources=src
+#             sonar.tests=__tests__
