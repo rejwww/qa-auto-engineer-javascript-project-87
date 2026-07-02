@@ -19,8 +19,8 @@ function parse(parserFile1 , parserFile2) {
       if (_.isEqual(value1, value2)) {
         result.push({type: 'pass', key, value: value1});
       } else {
-        result.push({type: 'del', key, value: value1});
-        result.push({type: 'add', key, value: value2});
+       result.push({type: 'update',key, oldValue: value1, newValue: value2,
+      });
       }
     }
   }

@@ -30,8 +30,13 @@
 gendiff filepath1.json filepath2.json
 https://asciinema.org/a/zpSmfK07gA37LCfp
 
-gendiff filepath1.yml filepath2.yml -f stylish       
+gendiff filepath1.yml filepath2.yml -f stylish
 https://asciinema.org/a/Z1dNugHjFlalBVlO
+
+gendiff filepath1.json filepath2.json -f plain
+https://asciinema.org/a/EY5nbafhxWUGDVu3
+
+
 
 ## Запусков тестов Jest
 make test
