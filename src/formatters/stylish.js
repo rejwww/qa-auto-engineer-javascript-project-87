@@ -16,8 +16,11 @@
       result.push(` - ${i.key}: ${i.value}`);
     } else if (i.type === 'pass') {
       result.push(`   ${i.key}: ${i.value}`);
-    }
+    }else if (i.type === 'update') {
+      result.push(` - ${i.key}: ${i.oldValue}`);
+      result.push(` + ${i.key}: ${i.newValue}`);
   }
+}
 
   result.push('}');
   return result.join('\n');
