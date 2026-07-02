@@ -12,19 +12,19 @@ function parse(parserFile1 , parserFile2) {
     const value2 = parserFile2[key];
 
     if (value1 === undefined) {
-      result.push(`+ ${key}:${value2}`);
+      result.push({type: 'add', key, value: value2});
     } else if (value2 === undefined) {
-      result.push(`- ${key}:${value1}`);
+      result.push({type: 'del', key, value: value1});
     } else {
       if (_.isEqual(value1, value2)) {
-        result.push(`  ${key}:${value1}`);
+        result.push({type: 'pass', key, value: value1});
       } else {
-        result.push(`- ${key}:${value1}`);
-        result.push(`+ ${key}:${value2}`);
+        result.push({type: 'del', key, value: value1});
+        result.push({type: 'add', key, value: value2});
       }
     }
   }
-  return result.join('\n');
+  return result;
 }
 
 export default parse
